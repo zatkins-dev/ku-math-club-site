@@ -1,0 +1,114 @@
+/* * {
+    font-family: 'Palatino Linotype', Palatino, 'Book Antiqua', serif;
+    background-color: gainsboro;
+}
+
+button {
+    font-size: 20px;
+    border: 1pt groove #663333;
+}
+
+input.button {
+    font-size:20px;
+    background-color: #FFE1DC;
+}
+
+h2 {
+    color: #996666;
+}
+
+a {
+    color: #422121;
+}
+
+div.content {
+    width: 720px;
+    margin: 50 auto 50 auto;
+    box-sizing: border-box !important;
+    clear:both;
+}
+
+div.content-mcol {
+    width: 960px;
+    margin: 50 auto 50 auto;
+    box-sizing: border-box !important;
+}
+
+.clearfix {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+div.content-mcol:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+div.titlebox {
+    border: 3px groove #663333;
+    padding-left: 10pt;
+    background-color: #FFE1DC;
+    vertical-align: middle;
+}
+
+.titlebox h1 {
+    background-color: inherit;
+}
+
+div.col {
+    position: relative;
+    display: table-column;
+    width: 360px;
+} */
+
+.float_center {
+    float: right;
+    position: relative;
+    left: -50%; /* or right 50% */
+    text-align: left;
+  }
+.float_center > .child {
+    position: relative;
+    left: 50%;
+}
+.container {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    
+    /*for demo purposes only */
+    box-sizing: border-box;
+}
+
+.column-one {
+    order: 1;
+}
+.column-two {
+    order: 2;
+}
+.column-three {
+    order: 3;
+}
+
+@media (min-width: 640px) {
+
+    p.relative-font-size {
+      font-size: 5vmin!important;
+    }
+    
+    h1.relative-font-size {
+        font-size: 20vmin!important;
+    }
+
+    h2.relative-font-size {
+        font-size: 16vmin!important;
+    }
+
+    h3.relative-font-size {
+        font-size: 12vmin!important;
+    }
+}
